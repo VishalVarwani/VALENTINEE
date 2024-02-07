@@ -2,6 +2,8 @@ import { useState, useRef } from 'react'
 import './App.css'
 import casnew from "../src/assets/casnew.mp3"
 import hojayegi from "../src/assets/hojayegi.mp3"
+import k from "../src/assets/k.mp3"
+
 
 const phrases = [
   "No 🙉",
@@ -22,7 +24,7 @@ function App() {
   const yesButtonSize = noCount * 20 + 16;
 
   // Using useRef to hold references to the audio elements
-  const noSoundRef = useRef(new Audio(casnew));
+  const noSoundRef = useRef(new Audio(k));
   const yesSoundRef = useRef(new Audio(hojayegi));
 
   function handleYesClick() {
